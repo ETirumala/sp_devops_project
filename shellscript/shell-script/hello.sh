@@ -5,7 +5,7 @@ echo $BASH_VERSION
 echo $HOME
 echo $PWD
 
-name=sathyapriya
+name=priya
 echo my lovely name is $name
 
 
