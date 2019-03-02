@@ -1,0 +1,52 @@
+# introduction of shellscript`
+
+
+Shell Sccript :
+	what is shell script?
+	A unix shell program interprets user commands which are directly entered by the user or which 
+	can be read from a file called the shell script or sheell program.
+
+	note: its interprets the shell scripts butnot compiling 
+
+	Bash Scripting: 
+		/cat/shells - u can see diff types of shell which your system can suppport.
+			sh 	    - sh stands for bourne shell which is original shell stiil used in unix env
+                	bash        - bash stands for bourne again shell was reinvented, which is standard and felxible.
+
+		which bash	    	= where bash located.
+		touch filename      	- creating file with an exetension .sh
+		ls -la 			- it will displays  the list of the files and directoriees indetailed
+
+	starting script language
+		#!			- #!(hashbang) adding location, this helps to know interpreter that it is shell script /1st line is standard practise to use 	
+		echo "content"		-  using echo code it will print the content which is display in the double quotes
+		./filename		- ./filename will execute the code which is written in the file.
+
+	-bash: ./file name: Permission denied
+		 to know why permission denied  by using code "ls -la or ls -ltr"  we can identified 
+	 				-rw-r--r--. 1 root root 71 Mar  2 10:16 hello.sh
+					user	groupi	other
+					r - 4	r - 4	r - 4 -----------
+					w - 2	w - 2	w - 2           |===> 777 (r = reading permission / w = writing permission / x = executiving permission) 
+					x - 1	x - 1	x - 1 -----------	
+					if it is permission denied it will be null (-) so in this file executing permission is denied
+					for giving permission we will use the code  "chmod u+x g+x o+x / 755 filename"
+	comment and variables
+		comments : line of code which is not executable by the code which will helpful information to know about the scripts for the other user
+		 # 			-  is used for comment before content
+		variables 		- variables are the container which stores data inside in them it can be string, number
+					- in shell there are two kinds of variables they are system variables and ther one user defined variables
+					System variables :
+						created and maintained by unix or linux operating system. these are predefined variables. these are the variables are defiened in capital cases.
+						echo $BASH
+						echo $BASH_VERSION
+						echo $HOME
+						echo $PWD
+					user variables :
+						created and maintained by user. defined in lowercases 			
+						 by giving a name = name of the variable
+						 name = sathyapriya
+						 echo my lovely name is $name 
+		 
+		note : in variable, variable name should not start from number
+
