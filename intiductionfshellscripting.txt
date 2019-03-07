@@ -1,0 +1,9 @@
+Shell Sccript :
+	what is shell script?
+	A unix shell program interprets user commands which are directly entered by the user or which 
+	can be read from a file called the shell script or sheell program.
+
+	note: its interprets the shell scripts butnot compiling 
+
+	Bash Scripting:
+	 
